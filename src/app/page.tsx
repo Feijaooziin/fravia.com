@@ -1,9 +1,5 @@
-import Teste from "@/_components/Teste";
+import Home from "@/app/pages/Home/page";
 
-export default function Home() {
-  return (
-    <div>
-      <Teste />
-    </div>
-  );
+export default function App() {
+  return <Home />;
 }
