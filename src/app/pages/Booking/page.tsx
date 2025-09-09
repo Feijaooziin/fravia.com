@@ -1,4 +1,4 @@
-export default function Services() {
+export default function Booking() {
   return (
     <div>
       <h1>Agendamento</h1>

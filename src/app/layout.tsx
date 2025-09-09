@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-gradient-to-b from-purple-900 via-purple-800 to-purple-950 text-white`}
       >
         {/* Header */}
-        <header className="w-full shadow-md bg-purple-950/80 backdrop-blur-md sticky top-0 z-50">
+        <header className="w-full shadow-md bg-purple-950 backdrop-blur-md sticky top-0 z-50">
           <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
             {/* Logo */}
             <h1 className="text-xl sm:text-2xl font-bold text-yellow-400">
@@ -105,7 +105,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="bg-purple-950/80 text-center py-6 text-sm text-yellow-300 px-4 sm:px-6 lg:px-10">
+        <footer className="bg-purple-950 text-center py-6 text-sm text-yellow-300 px-4 sm:px-6 lg:px-10">
           © {new Date().getFullYear()} Flávia Ribeiro - Todos os direitos
           reservados
         </footer>
