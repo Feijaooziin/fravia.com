@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -29,7 +30,12 @@ export default function HomePage() {
           Garanta já o seu horário e conquiste o olhar dos sonhos. Entre em
           contato pelo WhatsApp para mais informações.
         </p>
-        <Button className="text-xl p-5 bg-green-500 hover:bg-green-400 text-white w-full sm:w-auto cursor-pointer">
+        <Button
+          className="text-xl p-5 bg-green-500 hover:bg-green-400 text-white w-full sm:w-auto cursor-pointer"
+          onClick={() => {
+            alert("Redirecionar para o WhatsApp... (implementação futura)");
+          }}
+        >
           Falar no WhatsApp
         </Button>
       </section>

@@ -37,17 +37,17 @@ export default function RootLayout({
 
             {/* Desktop nav */}
             <nav className="hidden md:flex gap-6">
-              <Link href="/" className="hover:text-yellow-400">
+              <Link
+                href="/"
+                className="hover:text-yellow-400 text-xl font-semibold uppercase"
+              >
                 Início
               </Link>
-              <Link href="/pages/Services" className="hover:text-yellow-400">
+              <Link
+                href="/pages/Services"
+                className="hover:text-yellow-400 text-xl font-semibold uppercase"
+              >
                 Serviços
-              </Link>
-              <Link href="/pages/Booking" className="hover:text-yellow-400">
-                Agendamento
-              </Link>
-              <Link href="/pages/Clients" className="hover:text-yellow-400">
-                Clientes
               </Link>
             </nav>
 
@@ -64,22 +64,23 @@ export default function RootLayout({
                   </Button>
                 </SheetTrigger>
 
-                <SheetContent side="right" className="bg-purple-900 text-white">
+                <SheetContent side="right" className="bg-purple-600 text-white">
                   <SheetHeader>
-                    <SheetTitle className="text-yellow-400">Menu</SheetTitle>
+                    <SheetTitle className="text-yellow-400 text-xl font-semibold uppercase underline">
+                      Menu
+                    </SheetTitle>
                   </SheetHeader>
 
-                  <div className="justify-between flex flex-col h-full px-3">
-                    <div className="flex flex-col gap-4">
-                      <Link href="/">Início</Link>
-                      <Link href="/pages/Services">Serviços</Link>
-                      <Link href="/pages/Booking">Agendamento</Link>
-                      <Link href="/pages/Clients">Clientes</Link>
-                    </div>
-
-                    <Button className="w-full mb-6 bg-yellow-500 text-purple-950 hover:bg-yellow-400 transition">
-                      Agendar
-                    </Button>
+                  <div className="flex flex-col h-full px-3 gap-6">
+                    <Link href="/" className="text-2xl font-semibold uppercase">
+                      Início
+                    </Link>
+                    <Link
+                      href="/pages/Services"
+                      className="text-2xl font-semibold uppercase"
+                    >
+                      Serviços
+                    </Link>
                   </div>
                 </SheetContent>
               </Sheet>

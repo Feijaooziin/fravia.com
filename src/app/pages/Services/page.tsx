@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
@@ -46,7 +47,14 @@ export default function Services() {
                   <p className="text-white text-lg font-light">Preço: R$90</p>
                 </div>
               </div>
-              <Button className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400">
+              <Button
+                className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400"
+                onClick={() => {
+                  alert(
+                    "Redirecionar para o WhatsApp... (implementação futura)"
+                  );
+                }}
+              >
                 Agendar
               </Button>
             </CardContent>
@@ -71,7 +79,14 @@ export default function Services() {
                   <p className="text-white text-lg font-light">Preço: R$100</p>
                 </div>
               </div>
-              <Button className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400">
+              <Button
+                className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400"
+                onClick={() => {
+                  alert(
+                    "Redirecionar para o WhatsApp... (implementação futura)"
+                  );
+                }}
+              >
                 Agendar
               </Button>
             </CardContent>
@@ -95,7 +110,14 @@ export default function Services() {
                   <p className="text-white text-lg font-light">Preço: R$100</p>
                 </div>
               </div>
-              <Button className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400">
+              <Button
+                className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400"
+                onClick={() => {
+                  alert(
+                    "Redirecionar para o WhatsApp... (implementação futura)"
+                  );
+                }}
+              >
                 Agendar
               </Button>
             </CardContent>
@@ -117,7 +139,14 @@ export default function Services() {
                   <p className="text-white text-lg font-light">Preço: R$110</p>
                 </div>
               </div>
-              <Button className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400">
+              <Button
+                className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400"
+                onClick={() => {
+                  alert(
+                    "Redirecionar para o WhatsApp... (implementação futura)"
+                  );
+                }}
+              >
                 Agendar
               </Button>
             </CardContent>
@@ -143,7 +172,14 @@ export default function Services() {
                   <p className="text-white text-lg font-light">Preço: R$110</p>
                 </div>
               </div>
-              <Button className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400">
+              <Button
+                className="mt-4 w-full bg-yellow-500 text-purple-950 hover:bg-yellow-400"
+                onClick={() => {
+                  alert(
+                    "Redirecionar para o WhatsApp... (implementação futura)"
+                  );
+                }}
+              >
                 Agendar
               </Button>
             </CardContent>
