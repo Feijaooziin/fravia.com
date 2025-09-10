@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -13,16 +11,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Flávia Ribeiro",
@@ -36,16 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-gradient-to-b from-purple-900 via-purple-800 to-purple-950 text-white`}
-      >
+      <body className="antialiased min-h-screen flex flex-col bg-purple-950 text-white">
         {/* Header */}
-        <header className="w-full shadow-md bg-purple-950 backdrop-blur-md sticky top-0 z-50">
+        <header className="w-full shadow-md bg-purple-900 backdrop-blur-md sticky top-0 z-50">
           <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
             {/* Logo */}
-            <h1 className="text-xl sm:text-2xl font-bold text-yellow-400">
-              Flávia Ribeiro
-            </h1>
+            <Link href="/">
+              <h1 className="text-xl sm:text-2xl font-bold text-yellow-400">
+                Flávia Ribeiro
+              </h1>
+            </Link>
 
             {/* Desktop nav */}
             <nav className="hidden md:flex gap-6">
@@ -105,7 +93,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="bg-purple-950 text-center py-6 text-sm text-yellow-300 px-4 sm:px-6 lg:px-10">
+        <footer className="bg-purple-900 text-center py-6 text-sm text-yellow-300 px-4 sm:px-6 lg:px-10">
           © {new Date().getFullYear()} Flávia Ribeiro - Todos os direitos
           reservados
         </footer>

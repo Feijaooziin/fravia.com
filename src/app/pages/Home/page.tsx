@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -12,9 +13,11 @@ export default function HomePage() {
           Lash Designer especializada em realçar sua beleza com técnicas
           modernas. Agende seu horário online de forma rápida e prática.
         </p>
-        <Button className="bg-yellow-500 text-purple-950 hover:bg-yellow-400 transition w-full sm:w-auto">
-          Agendar agora
-        </Button>
+        <Link href="/pages/Services">
+          <Button className="text-xl p-5 bg-yellow-500 text-purple-950 hover:bg-yellow-400 w-full transition sm:w-auto cursor-pointer">
+            Agendar agora
+          </Button>
+        </Link>
       </section>
 
       {/* Chamada final */}
@@ -26,7 +29,7 @@ export default function HomePage() {
           Garanta já o seu horário e conquiste o olhar dos sonhos. Entre em
           contato pelo WhatsApp para mais informações.
         </p>
-        <Button className="bg-green-500 hover:bg-green-400 text-white w-full sm:w-auto">
+        <Button className="text-xl p-5 bg-green-500 hover:bg-green-400 text-white w-full sm:w-auto cursor-pointer">
           Falar no WhatsApp
         </Button>
       </section>
